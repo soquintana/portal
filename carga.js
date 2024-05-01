@@ -38,3 +38,11 @@ window.addEventListener('load', function() {
       modal.style.display = "none";
     });
   });
+
+
+const cerrarSesion = document.getElementById('cerrar-sesion');
+
+cerrarSesion.addEventListener('click', function() {
+
+    window.location.href = 'index.html'; 
+});

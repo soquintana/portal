@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
 body {
     background-image: radial-gradient(ellipse at left bottom, rgba(22, 24, 47, 1) 0%,rgba(19, 109, 104, 0.9) 59%, rgba(36, 167, 31, 0.9) 100%);
 	box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.774);
