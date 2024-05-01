@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Pantalla</title>
+    <link rel="stylesheet" href="carga.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+
+<main class="contenedor-segunda-pantalla">
+    <section class="formulario">
+        <h2>Formulario</h2>
+        <form action="#">
+            <div class="input-group">
+                <label for="razon-social">Razón Social</label>
+                <input type="text" id="razon-social" name="razon-social" required>
+            </div>
+            <div class="input-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="input-group">
+                <label for="tipo-factura">Tipo de Factura</label>
+                <select id="tipo-factura" name="tipo-factura" required>
+                    <option value="">Seleccione...</option>
+                    <option value="factura-a">Factura A</option>
+                    <option value="factura-b">Factura B</option>
+                    <option value="factura-c">Factura C</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="numero-factura">Número de Factura</label>
+                <input type="text" id="numero-factura" name="numero-factura" required>
+            </div>
+            <div class="input-group">
+                <label for="precio-neto">Precio Neto</label>
+                <input type="number" id="precio-neto" name="precio-neto" required>
+            </div>
+            <div class="input-group">
+                <label for="impuestos">Impuesto</label>
+                <input type="number" id="impuestos" name="impuestos" required>
+            </div>
+            <div class="input-group">
+                <label for="precio-bruto">Precio Bruto</label>
+                <input type="number" id="precio-bruto" name="precio-bruto" required>
+            </div>
+        </form>
+    </section>
+
+    <section class="pdf-container">
+        <div class="pdf-preview" id="pdf-preview">
+            <h2>Previsualización PDF</h2>
+            <div class="pdf-preview-content">
+            </div>
+        </div>
+        <div class="pdf-uploader" id="pdf-uploader">
+            <h2>Cargar PDF</h2>
+            <label for="pdf-file" class="file-label">
+                <i class="fas fa-cloud-upload-alt"></i> Seleccionar archivo PDF
+                <input type="file" id="pdf-file" accept=".pdf">
+            </label>
+        </div>
+    </section>
+</main>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>¡Bienvenido! Por favor, sigue las instrucciones de uso.</p>
+    </div>
+</div>
+
+<script src="carga.js"></script>
+
+</body>
+</html>

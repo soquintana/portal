@@ -1,0 +1,239 @@
+body {
+	background-color: #e9e9e9;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.contenedor-inicio-sesion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 6rem auto 0;
+	padding: 5rem 4rem 0 4rem;
+	width: 100%;
+	max-width: 525px;
+	min-height: 680px;
+	background-image: radial-gradient(ellipse at left bottom, rgba(22, 24, 47, 1) 0%,rgba(19, 109, 104, 0.9) 59%, rgba(36, 167, 31, 0.9) 100%);
+	box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.774);
+}
+
+.contenedor-logo {
+    width: 165px; 
+    height: 165px; 
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 150px; 
+    height: 150px;
+    border: 2px solid rgb(17, 97, 237);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contenedor-formularios {
+	width: 100%;
+}
+
+.formulario-iniciar-sesion, .formulario-registrarse {
+	position: relative;
+	padding-bottom: 3rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.navegacion-inicio-sesion {
+	padding: 0;
+	margin: 0 0 2em 1rem;
+}
+
+  
+.registro, .inicio-sesion {
+    list-style: none;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5); 
+    text-transform: uppercase; 
+    font-weight: 500; 
+    font-size: 1.25rem; 
+    padding: .8rem; 
+    transition: color 0.2s ease; 
+}
+
+
+.inicio-sesion:hover, .registro:hover {
+    color: #ffffff; 
+}
+
+.registro:after, .inicio-sesion:after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 100%;
+    bottom: -1px;
+    left: 0;
+    border-radius: 50%;
+    transition: .15s all ease;
+}
+
+
+
+
+.registro a:hover:after,
+.inicio-sesion a:after{
+	background-color: rgb(17, 97, 237);
+	height: 2px;
+	right: 0;
+	bottom: 2px;
+	border-radius: 0;
+}
+
+.etiqueta-inicio-sesion {
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	font-size: .75rem;
+}
+
+.entrada-inicio-sesion {
+	color: white;
+	font-size: 1.15rem;
+	width: 100%;
+	padding: .5rem 1rem;
+	border: 2px solid transparent;
+	outline: none;
+	border-radius: 1.5rem;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.entrada-inicio-sesion:hover,
+.entrada-inicio-sesion:focus{
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	background-color: transparent;
+}
+
+.entrada-inicio-sesion + .etiqueta-inicio-sesion {
+	margin-top: 1.5rem;
+}
+
+.entrada-inicio-sesion--casilla {
+	position: absolute;
+	top: .1rem;
+	left: 0;
+	margin: 0;
+}
+
+.boton-iniciar-sesion {
+	color: #ffffff;
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 3rem;
+	padding: .75rem;
+	border-radius: 2rem;
+	display: block;
+	width: 100%;
+	background-color: rgba(17, 97, 237, .75);
+	border: none;
+	cursor: pointer;
+}
+
+.boton-iniciar-sesion:hover {
+	background-color: rgba(17, 97, 237, 1);
+}
+
+.enlace-olvidar-contraseña {
+	display: block;
+	margin-top: 3rem;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.75);
+	font-size: .75rem;
+	text-decoration: none;
+	position: relative;
+}
+
+.enlace-olvidar-contraseña:hover {
+	color: rgb(17, 97, 237);
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+.redes-sociales .red {
+    list-style: none;
+}
+
+.redes-sociales .red a {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+}
+
+.red a .icono {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+}
+
+.red a:hover .icono {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.redes-sociales .red a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.redes-sociales .red a:hover:before {
+    top: 0;
+}
+
+.redes-sociales .red:nth-child(1) a:before{
+    background: #3b5999;
+}
+
+.redes-sociales .red:nth-child(2) a:before{
+    background: #55acee;
+}
+
+.redes-sociales .red:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+.redes-sociales .red:nth-child(4) a:before {
+    background: #dd4b39;
+}
