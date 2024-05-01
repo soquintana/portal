@@ -10,9 +10,9 @@
 <body>
 
 <main class="contenedor-inicio-sesion">
-    <article class="contenedor-logo">
+    <section class="contenedor-logo">
         <img src="fondo.png" alt="Logo de la empresa" class="logo">
-    </article>    
+    </section>    
     <section class="contenedor-formularios">        
         <ul class="navegacion-inicio-sesion">
                 <li class="inicio-sesion" onclick="mostrarFormulario('inicio')">Iniciar Sesión</li>
@@ -36,7 +36,6 @@
             <input id="input-usuario" class="entrada-inicio-sesion" type="text" required>
             <label for="input-contraseña" class="etiqueta-inicio-sesion" id="etiqueta-contraseña">Contraseña</label>
             <input id="input-contraseña" class="entrada-inicio-sesion" type="password" required>
-            <label for="registro-sesion-iniciada" class="etiqueta-inicio-sesion--casilla">
             <button type="submit" class="boton-iniciar-sesion" id="boton-iniciar-sesion" onclick="login()">Iniciar Sesión</button>
         </form>
     </section>
