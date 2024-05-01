@@ -23,7 +23,7 @@ function login(){
         let contraseña = document.getElementById('input-contraseña').value;
 
         
-        if (usuario === 'sebastian' && contraseña === '1234') {
+        if (usuario === 'codoacodo' && contraseña === '1234') {
         
             window.location.href = 'carga.html';
         } else {
