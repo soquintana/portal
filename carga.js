@@ -7,7 +7,7 @@ function mostrarPDFPreview(input) {
         const reader = new FileReader();
         reader.onload = function (e) {
             const pdfURL = `${e.target.result}`;
-            pdfPreview.innerHTML = `<embed src="${pdfURL}#toolbar=0&page=3" />`;
+            pdfPreview.innerHTML = `<iframe src="https://docs.google.com/gview?embedded=true&url=${pdfURL}#toolbar=0&page=1" frameborder="0"></iframe>`;
 
             pdfPreview.style.display = "block"; 
             pdfUploader.style.display = "none"; 
@@ -46,3 +46,6 @@ cerrarSesion.addEventListener('click', function() {
 
     window.location.href = 'index.html'; 
 });
+
+
+/*<embed src="${pdfURL}#toolbar=0&page=3" />*/

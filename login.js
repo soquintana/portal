@@ -31,3 +31,17 @@ function login(){
         }
    
     }
+
+    function vercontraseña() {
+        let mostrarpass = document.getElementById('ocultar-contraseña');
+        let inputpass = document.getElementById('input-contraseña');
+    
+        mostrarpass.addEventListener("click", (e) => {
+            if (inputpass.type === "password") {
+                inputpass.type = "text";
+            } else {
+                inputpass.type = "password";
+            }
+        });
+    }
+    

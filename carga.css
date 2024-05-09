@@ -112,6 +112,11 @@ body {
 	border: none;
 	cursor: pointer;
 }
+
+.validar:hover{
+    background-color: rgba(17, 97, 237, 1);
+}
+
 .cerrar-sesion {
     display: block;
     text-align: center;

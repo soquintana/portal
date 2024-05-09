@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="login.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://kit.fontawesome.com/4a240fd454.js" crossorigin="anonymous"></script>    
 </head>
 <body>
 
@@ -13,7 +14,7 @@
     <figure class="contenedor-logo">
        <img src="fondo.png" alt="Logo de la empresa" class="logo">
     </figure>
-    <section class="contenedor-formularios">        
+    <div class="contenedor-formularios">        
         <ul class="navegacion-inicio-sesion">
                 <li class="inicio-sesion" onclick="mostrarFormulario('inicio')">Iniciar Sesión</li>
                 <li class="registro" onclick="mostrarFormulario('registro')">Registrarse</li>
@@ -34,19 +35,20 @@
         <form action="#" class="formulario-iniciar-sesion" id="formularioInicio" onsubmit="return false">        
             <label for="input-usuario" class="etiqueta-inicio-sesion" id="etiqueta-usuario">Nombre de usuario</label>
             <input id="input-usuario" class="entrada-inicio-sesion" type="text" required>
-            <label for="input-contraseña" class="etiqueta-inicio-sesion" id="etiqueta-contraseña">Contraseña</label>
-            <input id="input-contraseña" class="entrada-inicio-sesion" type="password" required>
+            <label for="input-contraseña" class="etiqueta-inicio-sesion" id="etiqueta-contraseña">Contraseña</label>        
+            <input id="input-contraseña" class="entrada-inicio-sesion" type="password" required>           
+            <input type="checkbox" id="recuerda-login" class="recuerdame">
+            <label for="recuerda-login" class="recuerdame">Recuerdame</label>
             <button type="submit" class="boton-iniciar-sesion" id="boton-iniciar-sesion" onclick="login()">Iniciar Sesión</button>
         </form>
-    </section>
+    </div>
 
-    <a href="#" class="enlace-olvidar-contraseña">¿Olvidaste tu contraseña?</a>
+    <a href="olvidecontraseña.html" class="enlace-olvidar-contraseña">¿Olvidaste tu contraseña?</a>
 
     <aside class="circulos"> 
      <ul class="redes-sociales">
         <li class="red">
-          <a href="#">
-            <i class="fab fa-facebook-f icono"></i>    </a>
+          <a href="#"><i class="fab fa-facebook-f icono"></i></a>
         </li>
         <li class="red">
           <a href="#"><i class="fab fa-twitter icono"></i></a>
