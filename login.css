@@ -19,7 +19,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	margin: 6rem auto 0;
+	margin: 6rem auto 2rem;
 	padding: 5rem 4rem 0 4rem;
 	width: 100%;
 	max-width: 525px;

@@ -17,31 +17,47 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function login(){
+document.getElementById("boton-registrar").addEventListener("click", registrar);
+document.getElementById("boton-iniciar-sesion").addEventListener("click", login);
 
-        let usuario = document.getElementById('input-usuario').value;
-        let contraseña = document.getElementById('input-contraseña').value;
+var registros = {};
 
-        
-        if (usuario === 'codoacodo' && contraseña === '1234') {
-        
-            window.location.href = 'carga.html';
+function registrar() {
+    var nombre = document.getElementById("input-nombre-registro").value;
+    var correo = document.getElementById("input-correo-registro").value;
+    var contraseña = document.getElementById("input-contraseña-registro").value;
+    var confirmarContraseña = document.getElementById("input-confirmar-contraseña").value;
+
+    if (contraseña !== confirmarContraseña) {
+        alert("Las contraseñas no coinciden. Por favor, inténtalo de nuevo.");
+        return;
+    }
+
+    registros[nombre] = { correo: correo, contraseña: contraseña };
+
+    document.getElementById("input-nombre-registro").value = "";
+    document.getElementById("input-correo-registro").value = "";
+    document.getElementById("input-contraseña-registro").value = "";
+    document.getElementById("input-confirmar-contraseña").value = "";
+
+    alert("Registro exitoso. ¡Ahora puedes iniciar sesión!");
+    return false;
+}
+
+function login() {
+    var usuario = document.getElementById("input-usuario").value;
+    var contraseña = document.getElementById("input-contraseña").value;
+
+    if (registros.hasOwnProperty(usuario)) {
+        if (registros[usuario].contraseña === contraseña) {
+            window.location.href = "carga.html";
         } else {
-            alert('Usuario o contraseña incorrectos. Inténtalo de nuevo.');
+            alert("Contraseña incorrecta. Por favor, inténtalo de nuevo.");
         }
-   
+    } else {
+        alert("Usuario no registrado. Por favor, regístrate primero.");
     }
+    
+    return false;
+}
 
-    function vercontraseña() {
-        let mostrarpass = document.getElementById('ocultar-contraseña');
-        let inputpass = document.getElementById('input-contraseña');
-    
-        mostrarpass.addEventListener("click", (e) => {
-            if (inputpass.type === "password") {
-                inputpass.type = "text";
-            } else {
-                inputpass.type = "password";
-            }
-        });
-    }
-    

@@ -21,7 +21,7 @@
         </ul>
         
         <form action="#" class="formulario-registrarse" id="formularioRegistro" onsubmit="return false">    
-            <label for="input-nombre-registro" class="etiqueta-inicio-sesion" id="etiqueta-registro">Nombre</label>
+            <label for="input-nombre-registro" class="etiqueta-inicio-sesion" id="etiqueta-registro">Nombre de usuario</label>
             <input id="input-nombre-registro" class="entrada-inicio-sesion" type="text" required>
             <label for="input-correo-registro" class="etiqueta-inicio-sesion">Correo electrónico</label>
             <input id="input-correo-registro" class="entrada-inicio-sesion" type="email" required>
@@ -29,7 +29,7 @@
             <input id="input-contraseña-registro" class="entrada-inicio-sesion" type="password" required>
             <label for="input-confirmar-contraseña" class="etiqueta-inicio-sesion">Confirmar Contraseña</label>
             <input id="input-confirmar-contraseña" class="entrada-inicio-sesion" type="password" required>
-            <button type="submit" class="boton-iniciar-sesion" id="boton-registrar" disabled>Registrarse</button>
+            <button type="botton" class="boton-iniciar-sesion" id="boton-registrar" onclick="registrar()">Registrarse</button>
         </form>
 
         <form action="#" class="formulario-iniciar-sesion" id="formularioInicio" onsubmit="return false">        
@@ -39,7 +39,7 @@
             <input id="input-contraseña" class="entrada-inicio-sesion" type="password" required>           
             <input type="checkbox" id="recuerda-login" class="recuerdame">
             <label for="recuerda-login" class="recuerdame">Recuerdame</label>
-            <button type="submit" class="boton-iniciar-sesion" id="boton-iniciar-sesion" onclick="login()">Iniciar Sesión</button>
+            <button type="botton" class="boton-iniciar-sesion" id="boton-iniciar-sesion" onclick="login()">Iniciar Sesión</button>
         </form>
     </div>
 
@@ -48,15 +48,15 @@
     <aside class="circulos"> 
      <ul class="redes-sociales">
         <li class="red">
-          <a href="#"><i class="fab fa-facebook-f icono"></i></a>
+          <a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook-f icono"></i></a>
         </li>
         <li class="red">
-          <a href="#"><i class="fab fa-twitter icono"></i></a>
+          <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter icono"></i></a>
         </li>
         <li class="red">
-          <a href="#"><i class="fab fa-linkedin-in icono"></i></a></li>
+          <a href="https://ar.linkedin.com/"><i class="fab fa-linkedin-in icono"></i></a></li>
         <li class="red">
-          <a href="#"><i class="fab fa-google-plus-g icono"></i></a></li>
+          <a href="https://www.google.com.ar/?hl=es-419"><i class="fab fa-google-plus-g icono"></i></a></li>
       </ul>
     </aside>
 </main>
