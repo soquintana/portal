@@ -39,9 +39,7 @@ function registrar() {
     document.getElementById("input-correo-registro").value = "";
     document.getElementById("input-contraseña-registro").value = "";
     document.getElementById("input-confirmar-contraseña").value = "";
-
-    alert("Registro exitoso. ¡Ahora puedes iniciar sesión!");
-    return false;
+    return;
 }
 
 function login() {
@@ -56,8 +54,6 @@ function login() {
         }
     } else {
         alert("Usuario no registrado. Por favor, regístrate primero.");
-    }
-    
-    return false;
+    } 
 }
 
