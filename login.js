@@ -28,6 +28,11 @@ function registrar() {
     var contraseña = document.getElementById("input-contraseña-registro").value;
     var confirmarContraseña = document.getElementById("input-confirmar-contraseña").value;
 
+    if (!nombre || !correo || !contraseña || !confirmarContraseña) {
+        alert("Todos los campos son obligatorios. Por favor, rellena todos los campos.");
+        return;
+    }
+
     if (contraseña !== confirmarContraseña) {
         alert("Las contraseñas no coinciden. Por favor, inténtalo de nuevo.");
         return;
@@ -39,6 +44,8 @@ function registrar() {
     document.getElementById("input-correo-registro").value = "";
     document.getElementById("input-contraseña-registro").value = "";
     document.getElementById("input-confirmar-contraseña").value = "";
+    
+    alert("Te has registrado correctamente");
     return;
 }
 
@@ -49,6 +56,7 @@ function login() {
     if (registros.hasOwnProperty(usuario)) {
         if (registros[usuario].contraseña === contraseña) {
             window.location.href = "carga.html";
+           
         } else {
             alert("Contraseña incorrecta. Por favor, inténtalo de nuevo.");
         }
