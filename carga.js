@@ -7,7 +7,7 @@ function mostrarPDFPreview(input) {
         const reader = new FileReader();
         reader.onload = function (e) {
             const pdfURL = `${e.target.result}`;
-            pdfPreview.innerHTML = `<embed src="${pdfURL}#toolbar=0&page=3" />`;
+            pdfPreview.innerHTML = `<embed src="${pdfURL}#toolbar=0&page=1 "/>`;
 
             pdfPreview.style.display = "block"; 
             pdfUploader.style.display = "none"; 

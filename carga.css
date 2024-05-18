@@ -9,11 +9,19 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
+
 }
+
+* {
+	box-sizing: border-box;
+}
+
+
 
 .contenedor-segunda-pantalla {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    
 }
 
 .formulario {
@@ -21,7 +29,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	padding: 1rem;
-    margin: 1.5rem;
+    margin: 1rem;
 	grid-column: 1;
 }
 
@@ -57,7 +65,7 @@ body {
 .pdf-container {
     position: relative;
     grid-column: 2;
-	margin: 1.5rem;
+	margin: 1rem;
 }
 
 .pdf-preview,
@@ -143,13 +151,14 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    text-align: center;
   }
   
 
   .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
   }
   
@@ -158,4 +167,53 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+.footer {
+    background-color: rgba(3, 3, 3, 0.568); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: .3rem;
+    margin: .7rem;
+    text-align: center;
+    color: white;
+}
+
+.terminos{
+    color: #007bff;
+}
+.terminos:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .formulario {
+        grid-column: 1 / span 2;    
+    }
+
+
+    .pdf-container {
+     display: none;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .pdf-container {
+        grid-column: 1 / span 2;
+       
+    }
+    .pdf-uploader {
+        margin-top: 20px;
+    }
+    .file-label {
+        padding: 0.5rem 1rem;       
+    }
+}
+
+
+
+

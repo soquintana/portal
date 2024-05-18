@@ -54,6 +54,38 @@ function login() {
         }
     } else {
         alert("Usuario no registrado. Por favor, regístrate primero.");
-    } 
+    }
+    document.getElementById("input-usuario").value = "";
+    document.getElementById("input-contraseña").value = ""; 
 }
 
+
+var checkboxMostrarContraseña = document.getElementById("mostrar-contraseña");
+var campoContraseña = document.getElementById("input-contraseña");
+
+checkboxMostrarContraseña.addEventListener("change", function() {
+    if (checkboxMostrarContraseña.checked) {
+        campoContraseña.type = "text";
+    } else {
+        campoContraseña.type = "password";
+    }
+});
+
+var checkboxMostrarContraseñaReg = document.getElementById("mostrar-contraseña-reg");
+var campoContraseñaReg = document.getElementById("input-contraseña-registro");
+var ContraseñaReg = document.getElementById("input-confirmar-contraseña");
+
+checkboxMostrarContraseñaReg.addEventListener("change", function() {
+    if (checkboxMostrarContraseñaReg.checked) {
+        campoContraseñaReg.type = "text";
+    } else {
+        campoContraseñaReg.type = "password";
+    }
+});
+checkboxMostrarContraseñaReg.addEventListener("change", function() {
+    if (checkboxMostrarContraseñaReg.checked) {
+        ContraseñaReg.type = "text";
+    } else {
+        ContraseñaReg.type = "password";
+    }
+});

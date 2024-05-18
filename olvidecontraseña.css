@@ -20,20 +20,25 @@ body {
     margin: 4rem auto 4rem;
     padding: 2rem 4rem 0rem 4rem;
     width: 100%;
-    max-width: 525px;
-    min-height: 480px;
+    max-width: 480px;
+    min-height: 600px;
     background-image: radial-gradient(ellipse at left bottom, rgba(22, 24, 47, 1) 0%,rgba(19, 109, 104, 0.9) 59%, rgba(36, 167, 31, 0.9) 100%);
     box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.774);
+    border: 3px solid white;
+    border-radius: 10px;
+
 }
 
 h1 {
     margin: 1rem 1rem 0 1rem;
     font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
 }
 p {
     margin: 2rem;
     text-align: center;
     font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 .contenedor-formulario-recuperacion {
     width: 100%;
