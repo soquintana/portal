@@ -3,9 +3,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-}
-
-body {
     background-image: radial-gradient(ellipse at left bottom, rgba(22, 24, 47, 1) 0%, rgba(19, 109, 104, 0.9) 59%, rgba(36, 167, 31, 0.9) 100%);
     color: #333;
     display: flex;
@@ -38,17 +35,27 @@ body {
     font-size: 24px;
     color: #555555;
     margin-top: 30px;
+    background-color: #f7f7f7; 
+    padding: 10px; 
+    border-left: 5px solid #4CAF50; 
+    display: flex; 
+    align-items: center;
+}
+
+.content h2 .title-icon {
+    margin-right: 10px; 
 }
 
 .content p {
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .content a {
-    color: #007bff;
+    color: #ff4500;
     text-decoration: none;
-    border-bottom: 1px dotted #007bff;
+    border-bottom: 1px dotted #ff4500;
 }
 
 .content a:hover {
@@ -64,7 +71,16 @@ body {
 
 .boton-volver {
     display: block;
-    text-align: end;
-    margin-right: 5rem;
+    text-align: center;
     margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.boton-volver:hover {
+    background-color: #45a049;
 }
