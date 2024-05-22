@@ -68,7 +68,7 @@ figure {
     flex-direction: row;
     justify-content: space-around;
 	padding: 1rem;
-	margin: 0 0 2rem 0;
+	margin: 1rem -2rem 2rem -2rem;
 }
 
   
@@ -294,8 +294,7 @@ aside {
   @media screen and (max-width: 400px) {
     
     .navegacion-inicio-sesion {
-    
-        margin: .5rem;        
+        
         justify-content: center;
     }        
    
