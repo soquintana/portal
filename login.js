@@ -97,3 +97,20 @@ checkboxMostrarContraseñaReg.addEventListener("change", function() {
         ContraseñaReg.type = "password";
     }
 });
+
+
+    const registro = document.querySelector('.registro');
+    const inicioSesion = document.querySelector('.inicio-sesion');
+
+    function cambiarTexto() {
+        if (window.innerWidth <= 768) {
+            registro.textContent = 'Registro';
+            inicioSesion.textContent = 'Ingresar';
+        } else {
+            registro.textContent = 'Registrarme'; 
+            inicioSesion.textContent = 'Iniciar Sesión';
+        }
+    }
+
+    window.addEventListener('resize', cambiarTexto);
+    cambiarTexto(); 

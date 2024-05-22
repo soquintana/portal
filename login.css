@@ -28,6 +28,10 @@ body {
 	box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.774);
 }
 
+figure {
+    flex: 1;
+}
+
 .contenedor-logo {
     width: 165px; 
     height: 165px; 
@@ -50,6 +54,7 @@ body {
 
 .contenedor-formularios {
 	width: 100%;
+    flex: 2;
 }
 
 .formulario-iniciar-sesion, .formulario-registrarse {
@@ -61,21 +66,27 @@ body {
 .navegacion-inicio-sesion {
     display: flex;
     flex-direction: row;
-	padding: 0;
-	margin: 0 0 2em 1rem;
+    justify-content: space-around;
+	padding: 1rem;
+	margin: 0 0 2rem 0;
 }
 
   
 .registro, .inicio-sesion {
+    justify-content: center;
     list-style: none;
     color: rgba(255, 255, 255, 0.5); 
     text-transform: uppercase; 
     font-weight: 500; 
-    font-size: 1.25rem; 
-    padding: .8rem; 
-    transition: color 0.2s ease; 
+    font-size: 1.3rem; 
+    padding: .3rem; 
+    transition: color 0.2s ease;    
 }
 
+.registro::before, .inicio-sesion::before {
+    content: ""; 
+
+}
 
 .inicio-sesion:hover, .registro:hover {
     color: #ffffff; 
@@ -137,6 +148,7 @@ body {
 	font-size: .75rem;
 	text-decoration: none;
 	position: relative;
+    flex: 3;
 }
 
 .enlace-olvidar-contraseña:hover {
@@ -152,6 +164,10 @@ body {
 }
 .label-mostrar-reg{
     font-size: 13px;
+}
+
+aside {
+    flex: 4;
 }
 
 .redes-sociales {
@@ -227,7 +243,7 @@ body {
 
   
     .contenedor-inicio-sesion {
-      width: 90%;
+      width: 95%;
       max-width: unset;
       margin: 3rem auto;
     }
@@ -244,9 +260,8 @@ body {
     }
   
     .navegacion-inicio-sesion {
-      margin: 1rem;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-around;
+      padding-bottom: 1rem ;
 
     }
   
@@ -282,12 +297,6 @@ body {
     
         margin: .5rem;        
         justify-content: center;
-    }
-    .registro, .inicio-sesion {
-        font-size: 1rem; 
-        color: #262626;
-    }
-    .contenedor-formularios {
-        width: 12rem;
-    }
+    }        
+   
   }
